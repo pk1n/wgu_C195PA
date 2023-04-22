@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrickkinney.c195pa.modAppointmentController">
+   <children>
+      <Label layoutX="39.0" layoutY="113.0" prefHeight="17.0" prefWidth="88.0" text="Appointment ID" />
+      <Label layoutX="345.0" layoutY="113.0" prefHeight="17.0" prefWidth="42.0" text="Title" />
+      <Label layoutX="39.0" layoutY="145.0" prefHeight="17.0" prefWidth="88.0" text="Description" />
+      <Label layoutX="44.0" layoutY="224.0" prefHeight="17.0" prefWidth="64.0" text="Location" />
+      <Label layoutX="39.0" layoutY="404.0" text="Contact" />
+      <Label layoutX="347.0" layoutY="225.0" text="Type" />
+      <Button fx:id="modAppSaveButton" layoutX="439.0" layoutY="550.0" mnemonicParsing="false" onAction="#onActionSaveAppointment" text="Save" />
+      <Button fx:id="modAppCancelButton" layoutX="497.0" layoutY="550.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel" />
+      <Label layoutX="43.0" layoutY="64.0" text="Mod Appointment">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modAppIDTextfield" disable="true" layoutX="139.0" layoutY="109.0" promptText="Auto Gen-Disabled" />
+      <TextField fx:id="modAppTitleTextfield" layoutX="401.0" layoutY="109.0" promptText="Title" />
+      <TextField fx:id="modAppLocationTextfield" layoutX="144.0" layoutY="221.0" promptText="Location" />
+      <TextField fx:id="modAppTypeTextfield" layoutX="408.0" layoutY="221.0" promptText="Type" />
+      <ComboBox fx:id="modAppContactCombo" layoutX="108.0" layoutY="404.0" prefWidth="150.0" promptText="Contact Name" />
+      <ComboBox fx:id="modAppCustIDCombo" layoutX="406.0" layoutY="400.0" prefWidth="150.0" promptText="ID Number" />
+      <Label layoutX="40.0" layoutY="301.0" text="Hour" />
+      <ComboBox fx:id="modAppUserIDCombo" layoutX="109.0" layoutY="442.0" prefHeight="25.0" prefWidth="150.0" promptText="ID Number" />
+      <Label layoutX="327.0" layoutY="404.0" text="Customer ID" />
+      <Label layoutX="34.0" layoutY="442.0" text="User ID" />
+      <Label layoutX="86.0" layoutY="268.0" text="Appointment Start Information" underline="true" />
+      <Label layoutX="39.0" layoutY="335.0" text="Min" />
+      <TextArea fx:id="modAppDescripTextArea" layoutX="139.0" layoutY="144.0" prefHeight="67.0" prefWidth="412.0" />
+      <Label layoutX="39.0" layoutY="367.0" text="Date" />
+      <Label layoutX="371.0" layoutY="268.0" text="Appointment End Information" underline="true" />
+      <Label layoutX="332.0" layoutY="300.0" text="Hour" />
+      <Label layoutX="330.0" layoutY="334.0" text="Min" />
+      <Label layoutX="330.0" layoutY="366.0" text="Date" />
+      <DatePicker fx:id="startDate" layoutX="109.0" layoutY="366.0" />
+      <DatePicker fx:id="endDate" layoutX="405.0" layoutY="362.0" />
+      <ComboBox fx:id="startHour" layoutX="108.0" layoutY="296.0" prefWidth="150.0" />
+      <ComboBox fx:id="startMin" layoutX="108.0" layoutY="330.0" prefHeight="20.0" prefWidth="150.0" />
+      <ComboBox fx:id="endHour" layoutX="405.0" layoutY="296.0" prefHeight="20.0" prefWidth="150.0" />
+      <ComboBox fx:id="endMin" layoutX="405.0" layoutY="330.0" prefHeight="20.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
